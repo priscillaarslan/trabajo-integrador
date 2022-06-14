@@ -132,16 +132,36 @@ color: white; text-decoration: none;}
 
 .section1 {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-left: 1cm;
-  padding-right: 1cm;
+  justify-content: space-around;
+
+ 
 }
 
-.artistas {
+.section2 {
+  display: flex;
+  justify-content: space-around;
+
+  
+}
+
+.section4 {
+  display: flex;
+  justify-content: space-around;
+  margin: 5px;
+  
+  
+}
+
+.artistas3 {
+  max-width: 200px;
   color: white;
   font-weight: bolder;
+  text-align: center;
+}
+
+.nombre{
+  max-width: 200px;
+  color: white;
   text-align: center;
 }
 
@@ -547,6 +567,7 @@ a{
 
 .weight{
   font-weight: 300;
+}
 .divcaja{
   margin-left: 2px;
 }
