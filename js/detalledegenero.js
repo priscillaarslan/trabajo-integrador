@@ -1,6 +1,4 @@
 
-
-
 let qs = location.search;
 
 let qsOL = new URLSearchParams(qs)
@@ -20,3 +18,4 @@ document.querySelector(".contenedorGenero").innerHTML +=`<h2 class="Genero" >Gen
 .catch(function(error){
     console.log(error);
 })
+

@@ -10,7 +10,9 @@ fetch(url)
    
     for (let i = 0; i < generos.data.length; i++) {
       contenedor.innerHTML += `<li>
-                                  <a href="./Detalledegenero.html?idGenero=${generos.data[i].id}">${generos.data[i].name}</a>
+                                  <a href="./Detalledegenero.html?idGenero=${generos.data[i].id}">${generos.data[i].name} 
+                                  <img src=${generos.data[i].picture_medium} alt="${generos.data[i].title}">
+                                  </a>
                               </li>` 
     }
 })
