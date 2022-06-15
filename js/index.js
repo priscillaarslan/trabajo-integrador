@@ -89,7 +89,7 @@ fetch(url3)
     for (let i = 0; i <= 4; i++) {
 
 
-      document.querySelector('.section4').innerHTML += `
+      document.querySelector('.section14').innerHTML += `
       <article>
       <img class="img1" src=${artistas[i].picture}>
       <a href="./detalledeartista.html?Idartistas=${artistas[i].id}">

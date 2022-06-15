@@ -26,7 +26,7 @@ fetch ('https://api.allorigins.win/raw?url=https://api.deezer.com/search?q=' + b
             results.innerHTML += `<article>
             <img scr=${buscar[i].picture}        alt=""   />
             <a href="./detallecanciones.html?Id=${buscar[i].id}"> 
-            <p>Name:${buscar[i].title}   </p>
+            <p class="artistas4">Name:  ${buscar[i].title}   </p>
             </a>
             </article>
             `
