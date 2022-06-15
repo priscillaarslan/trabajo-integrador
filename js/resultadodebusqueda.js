@@ -17,7 +17,7 @@ fetch ('https://api.allorigins.win/raw?url=https://api.deezer.com/search?q=' + b
         console.log(0<buscar.length)
         if (buscar.length == 0){ 
             results,innerHTML= `
-            <img scr="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif?20151024034921"/>
+            <img scr="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif?20151024034921" alt="">
             `
         }
         if (buscar.length > 0){
