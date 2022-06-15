@@ -4,7 +4,7 @@ let queryStringObj = new URLSearchParams(queryString);
 let busqueda = queryStringObj.get('q');
 console.log(busqueda)
 
-fetch ('https://api.allorigins.win/raw?url=https://api.deezer.com/search?q' + busqueda)
+fetch ('https://api.allorigins.win/raw?url=https://api.deezer.com/search?q=' + busqueda)
 
     .then(function (response) {
         return response.json();

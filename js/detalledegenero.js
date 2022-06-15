@@ -1,10 +1,9 @@
-
 let qs = location.search;
 
 let qsOL = new URLSearchParams(qs)
 let id = qsOL.get("idGenero")
 
-let url = `https://api.allorigins.win/raw?url=https://api.deezer.com/genre/${id}`;
+let url = `https://api.allorigins.win/raw?url=https://api.deezer.com/genre/${id}/`;
 
 fetch(url)
 .then(function(response){

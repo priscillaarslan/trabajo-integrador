@@ -8,10 +8,10 @@ fetch(url)
   .then(function(generos){
       let contenedor = document.querySelector(".ulgenero");
    
-    for (let i = 0; i < generos.data.length; i++) {
+    for (let i = 0; i<6; i++ ) {
       contenedor.innerHTML += `<li>
                                   <a href="./Detalledegenero.html?idGenero=${generos.data[i].id}">${generos.data[i].name} 
-                                  <img src=${generos.data[i].picture_medium} alt="${generos.data[i].title}">
+                                  <img class="fotosgenero" src=${generos.data[i].picture_medium} alt="${generos.data[i].title}">
                                   </a>
                               </li>` 
     }
