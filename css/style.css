@@ -888,17 +888,29 @@ footer {
   margin-left: 1.5cm;
   font-size: 20px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif; 
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-.fotosgenero{height: 200px; margin-left: 2cm; }
-.listageneros{margin-left: 2cm;}
-
-.ulgenero{font-size: 20px; margin-left: 2cm;}
-
-.sectiongenero{ display: flex;
+.fotosgenero {
+  height: 200px;
+  margin-left: 3.5cm;
+  display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  flex-wrap: wrap;
-color: white;padding-left: 1cm;}
+}
 
+.ulgenero{list-style-type: none;}
+
+.letrasgenero {
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.sectiongenero {
+  display: flex;
+  flex-wrap: wrap;
+  flex-wrap: wrap;
+  color: white;
+  padding-left: 1cm;
+  flex-direction: row;
+}
