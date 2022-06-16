@@ -15,7 +15,7 @@ fetch(url)
 })
 .then(function(data){
 console.log(data)
-document.querySelector(".contenedorGenero").innerHTML +=`<h2 class="Genero" >Genero: ${data.name}</h2>`
+document.querySelector(".contenedorGenero").innerHTML +=`<h2>Genero: ${data.name}</h2>`
 })
 
 .catch(function(error){
@@ -23,3 +23,21 @@ document.querySelector(".contenedorGenero").innerHTML +=`<h2 class="Genero" >Gen
 })
 
 
+let urlartistas = `https://api.allorigins.win/raw?url=https://api.deezer.com/genre/${id}/artists`; 
+fetch(urlartistas)
+.then(function(response){
+    console.log(response)
+    return response.json();
+})
+.then(function(data){
+console.log("artistas",data.data)
+for (let i = 0; i <= 6; i++){
+    document.querySelector('.artistas').innerHTML += `
+    <a href="./detalledeartista.html?idGenero=${data.data[i].id}">${data.data[i].name}"></a>
+    <h2 class="artistas1">Artista:</h2>`
+}
+})
+
+.catch(function(error){
+    console.log(error);
+})

@@ -885,8 +885,9 @@ footer {
 .contenedorGenero {
   color: white;
 }
-.Genero {
+.genero1 {
   color: white;
+ padding-left: 1cm;
 }
 
 .nombregenero {
@@ -919,4 +920,6 @@ footer {
   color: white;
   padding-left: 1cm;
   flex-direction: row;
+ 
 }
+
