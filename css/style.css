@@ -8,7 +8,7 @@
   color: white;
   display: flex;
   justify-content: space-between;
-  height: 1600px;
+  height: 2000px;
   width: 300px;
   background-color: rgb(24, 15, 29);
   text-decoration: none;
@@ -898,7 +898,7 @@ footer {
   flex-wrap: wrap;
 }
 
-.ulgenero{list-style-type: none;}
+.ulgenero{list-style-type:none}
 
 .letrasgenero {
   color: white;

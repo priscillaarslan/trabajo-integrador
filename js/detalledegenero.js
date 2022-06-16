@@ -1,12 +1,16 @@
-let qs = location.search;
 
+let qs = location.search;
 let qsOL = new URLSearchParams(qs)
 let id = qsOL.get("idGenero")
 
-let url = `https://api.allorigins.win/raw?url=https://api.deezer.com/genre/${id}/`;
 
+let generos = document.querySelector("#generosid")
+let artist = document.querySelector('.contenedorGenero')
+
+let url = `https://api.allorigins.win/raw?url=https://api.deezer.com/genre/${id}/`; 
 fetch(url)
 .then(function(response){
+    console.log(response)
     return response.json();
 })
 .then(function(data){
@@ -17,4 +21,5 @@ document.querySelector(".contenedorGenero").innerHTML +=`<h2 class="Genero" >Gen
 .catch(function(error){
     console.log(error);
 })
+
 
