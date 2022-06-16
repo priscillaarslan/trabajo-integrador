@@ -32,7 +32,8 @@ fetch(urlartistas)
 .then(function(data){
 console.log("artistas",data.data)
 for (let i = 0; i <= 6; i++){
-    document.querySelector('.artistas').innerHTML += `
+    document.querySelector('.artistas').innerHTML += ` 
+    <img src="${data.data[i].picture}" alt="">
     <a href="./detalledeartista.html?idGenero=${data.data[i].id}">${data.data[i].name}"></a>
     <h2 class="artistas1">Artista:</h2>`
 }
