@@ -23,7 +23,7 @@ fetch(url)
 <p class= "artistas3" > ${artistas[i].artist.name}</p>
 </a>
 <a href="./detallecanciones.html?idcancion=${artistas[i].id}">
- <h3 class="nombre"> ${artistas[i].title}</h3>
+ <h3 class="artistas3"> ${artistas[i].title}</h3>
  </a>
 
     
