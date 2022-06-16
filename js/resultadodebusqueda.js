@@ -16,8 +16,8 @@ fetch ('https://api.allorigins.win/raw?url=https://api.deezer.com/search?q=' + b
         
         console.log(0<buscar.length)
         if (buscar.length == 0){ 
-            results,innerHTML= `
-            <img scr="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif?20151024034921" alt="">
+            results.innerHTML= `
+            <img scr="https://i.stack.imgur.com/ATB3o.gif" alt="">
             `
         }
         if (buscar.length > 0){
@@ -26,7 +26,7 @@ fetch ('https://api.allorigins.win/raw?url=https://api.deezer.com/search?q=' + b
             results.innerHTML += `<article>
             <img scr=${buscar[i].picture}        alt=""   />
             <a href="./detallecanciones.html?Id=${buscar[i].id}"> 
-            <p>Name:${buscar[i].title}   </p>
+            <p class="artistas4">Name:  ${buscar[i].title}   </p>
             </a>
             </article>
             `

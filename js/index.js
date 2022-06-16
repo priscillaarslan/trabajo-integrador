@@ -23,7 +23,7 @@ fetch(url)
 <p class= "artistas3" > ${artistas[i].artist.name}</p>
 </a>
 <a href="./detallecanciones.html?idcancion=${artistas[i].id}">
- <h3 class="nombre"> ${artistas[i].title}</h3>
+ <h3 class="artistas3"> ${artistas[i].title}</h3>
  </a>
 
     
@@ -89,7 +89,7 @@ fetch(url3)
     for (let i = 0; i <= 4; i++) {
 
 
-      document.querySelector('.section4').innerHTML += `
+      document.querySelector('.section14').innerHTML += `
       <article>
       <img class="img1" src=${artistas[i].picture}>
       <a href="./detalledeartista.html?Idartistas=${artistas[i].id}">

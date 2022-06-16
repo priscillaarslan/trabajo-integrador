@@ -8,7 +8,11 @@
   color: white;
   display: flex;
   justify-content: space-between;
+<<<<<<< HEAD
   height: 2000px;
+=======
+  height: 1800px;
+>>>>>>> ba96155f027458b281623a212a496a93ee5a7ede
   width: 300px;
   background-color: rgb(24, 15, 29);
   text-decoration: none;
@@ -144,7 +148,7 @@
   justify-content: space-around;
 }
 
-.section4 {
+.section14 {
   display: flex;
   justify-content: space-around;
   margin: 5px;
@@ -155,6 +159,11 @@
   color: white;
   font-weight: bolder;
   text-align: center;
+}
+.artistas4{
+  color: white;
+  font-weight: bolder;
+  font-size: 15px;
 }
 
 .nombre {
@@ -280,6 +289,7 @@
 .section3 {
   display: flex;
   flex-wrap: wrap;
+flex-direction: column;
   justify-content: space-between;
   padding-left: 1cm;
   padding-right: 1cm;
