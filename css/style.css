@@ -923,3 +923,22 @@ footer {
  
 }
 
+.imagenesartistas{margin-left: 2cm;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;}
+.artistas1{color: white;}
+
+
+.divartistas{
+ padding-left: 1cm;
+ display: flex;
+ flex-direction: row;
+flex-wrap: wrap;
+color: white;
+ text-decoration: none;
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ font-size: 15px;}
+
+
+
