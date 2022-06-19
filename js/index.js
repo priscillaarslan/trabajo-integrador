@@ -74,7 +74,6 @@ fetch(url2)
 
 
 
-
 //Artistas mas esuchados 
 let url3 = ('https://api.allorigins.win/raw?url=https://api.deezer.com/chart/0/artists');
 
@@ -87,7 +86,6 @@ fetch(url3)
     let artistas = datos.data
     console.log(datos.data)
     for (let i = 0; i <= 4; i++) {
-
 
       document.querySelector('.section14').innerHTML += `
       <article>
