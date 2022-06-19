@@ -1,5 +1,3 @@
-localStorage.setItem('favoritos', '142706538');
-localStorage.setItem('favoritos', '152706538');
 console.log(localStorage)
 let favoritos = []
 let recuperoStorage = localStorage.getItem('favoritos'); /*Local atroage es un objeto literal pero solo me deja almacenar strings  */
