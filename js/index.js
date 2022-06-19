@@ -41,7 +41,7 @@ fetch(url)
 
 
 // Albumes mas escuchados
-let url2 = ('https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/albums');
+let url2 = ('https://api.allorigins.win/raw?url=https://api.deezer.com/chart/0/albums');
 
 fetch(url2)
 
