@@ -4,40 +4,41 @@ let queryStringObj = new URLSearchParams(queryString);
 let busqueda = queryStringObj.get('q');
 console.log(busqueda)
 
-fetch ('https://api.allorigins.win/raw?url=https://api.deezer.com/search?q=' + busqueda)
+let Artistas = `https://api.allorigins.win/raw?url=https://api.deezer.com/search/artist?q=${busqueda}`
 
+
+
+
+fetch(Artistas)
     .then(function (response) {
         return response.json();
     })
     .then(function (datos) {
         let buscar = datos.data
-        console.log(datos);
-        console.log("BUSCAR",buscar.length)
-        
-        console.log(0<buscar.length)
-        if (buscar.length == 0){ 
-            results.innerHTML= `
-            <img scr="https://i.stack.imgur.com/ATB3o.gif" alt="">
-            `
-        }
-        if (buscar.length > 0){
-        for (let i = 0; i < buscar.length; i++) {
-            
-            results.innerHTML += `<article>
-            <img scr=${buscar[i].picture}        alt=""   />
-            <a href="./detallecanciones.html?Id=${buscar[i].id}"> 
-            <p class="artistas4">Name:  ${buscar[i].title}   </p>
+
+      
+
+
+
+        if (buscar.length > 0) {
+            for (let i = 0; i <= 2; i++) {
+
+                results.innerHTML += `<article>
+                <img class="img1" src=${buscar[i].picture}>
+            <a href="./detalledeartista.html?Id=${buscar[i].id}"> 
+            <p class="artistas4">Name:  ${buscar[i].name}   </p>
             </a>
             </article>
             `
-            }} else{
-                results.innerHTML=`
+            }
+        } else if (buscar.length == 0) {
+            results.innerHTML = `
                 <h1 class="artistas3">No hay resultados</h1> 
                 `
-            } 
+        }
 
-           
-        
+
+
     })
     .catch(function (error) {
         console.log(error);
@@ -46,3 +47,46 @@ fetch ('https://api.allorigins.win/raw?url=https://api.deezer.com/search?q=' + b
 
 
 
+
+
+    //Tracks
+
+    let tracks = `https://api.allorigins.win/raw?url=https://api.deezer.com/search/track?q=${busqueda}`
+
+    fetch(tracks)
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (datos) {
+        let buscar = datos.data
+
+        console.log(datos);
+
+
+
+        if (buscar.length > 0) {
+            for (let i = 0; i <= 5; i++) {
+
+                results.innerHTML += `<article>
+                <img class="img1" src=${buscar[i].album.cover}>
+            <a href="./detallecanciones.html?Id=${buscar[i].id}"> 
+            <p class="artistas4">Name:  ${buscar[i].title}   </p>
+            </a>
+            </article>
+            `
+            }
+        } else if (buscar.length == 0) {
+            results.innerHTML = `
+                <h1 class="artistas3">No hay resultados</h1> 
+                `
+        }
+
+
+
+    })
+    .catch(function (error) {
+        console.log(error);
+    })
+
+
+  
