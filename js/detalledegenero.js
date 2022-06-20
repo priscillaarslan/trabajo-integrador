@@ -14,7 +14,7 @@ fetch(url)
 })
 .then(function(data){
 console.log(data)
-document.querySelector(".contenedorGenero").innerHTML +=`<h2>Genero: ${data.name}</h2>`
+document.querySelector(".contenedorGenero").innerHTML +=`<h2 class="generost"> Genero: ${data.name}</h2>`
 
 let urlartistas = `https://api.allorigins.win/raw?url=https://api.deezer.com/genre/${id}/artists`; 
 fetch(urlartistas)
