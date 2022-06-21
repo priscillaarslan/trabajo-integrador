@@ -19,7 +19,8 @@ console.log(id);
         for (let i = 0; i < 5; i++) {
 
             
-        section.innerHTML = `<article class="detalleartistas">
+        section.innerHTML += 
+        `<article class="detalleartistas">
         <a href="./detalledeartista.html">
           <h3 class="artistas">Bad Bunny | Genero: Trap </h3>
         </a>

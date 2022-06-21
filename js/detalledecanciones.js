@@ -1,7 +1,7 @@
 let queryString = location.search;
 let queryStringObj = new URLSearchParams(queryString);
 let id = queryStringObj.get("id");
-console.log(id);
+
 
 let url = `https://api.allorigins.win/raw?url=https://api.deezer.com/track/${id}/`; 
 fetch(url)
@@ -13,7 +13,8 @@ fetch(url)
     let section = document.querySelector(".section4");
     console.log(data);
 
-    section.innerHTML += `<article class="article4">
+    section.innerHTML += 
+    `<article class="article4">
 <ul>
 <a href="./detalledecanciones.html?id=${data.id}"> <li class="listadetalle5">${data.title}</li> </a>
 </ul>
@@ -24,9 +25,10 @@ fetch(url)
   <p class="par"> - ${data.album.title}</p>
   <img src="${data.album.cover_medium}" alt="">
 </a></a>
-<iframe title="deezer-widget" src="https://developers.deezer.com/api/explorer?url=track/3135556/${id}" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
+<iframe title="deezer-widget" src="https://api.allorigins.win/raw?url=https://api.deezer.com/track/${id}" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
 <br>
 <label class="agregar" for="terms">
+
   <button class="agregar" >
     Agregar cancion a mi playlist</button></label>
 </article>
