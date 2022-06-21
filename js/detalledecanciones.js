@@ -3,7 +3,7 @@ let queryStringObj = new URLSearchParams(queryString);
 let id = queryStringObj.get("id");
 console.log(id);
 
-let url = `https://api.allorigins.win/raw?url=https://api.deezer.com/track/${id}/`; 
+let url = `https://developers.deezer.com/api/track/raw?url=https://api.deezer.com/track/3135556${id}/`; 
 fetch(url)
   .then(function (response) {
     console.log(response);
