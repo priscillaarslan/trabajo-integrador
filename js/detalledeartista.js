@@ -14,28 +14,11 @@ console.log(id);
       .then(function (data) {
         console.log(data);
         let section = document.querySelector(".detalledeartistas");
-
-        .catch(function(error) {
-            console.log(error);
-        })
-            
-
-      fetch (`https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${id}/albums`)
+  
       
-      .then(function (response) {
-        console.log(response);
-        return response.json()
-      })
-      .then(function (datos) {
-        console.log(datos);
-        
-        
         for (let i = 0; i < 5; i++) {
 
             
-          
-         
-    
         section.innerHTML = `<article class="detalleartistas">
         <a href="./detalledeartista.html">
           <h3 class="artistas">Bad Bunny | Genero: Trap </h3>
@@ -44,11 +27,16 @@ console.log(id);
         <br>
       </article>`
 
+  
 
       .catch(function(error) {
         console.log(error);
     })
-        }
+  }
+  
+})
+
+
 
 
 

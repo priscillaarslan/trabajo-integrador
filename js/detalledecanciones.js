@@ -10,8 +10,8 @@ fetch(url)
     return response.json();
   })
   .then(function (data) {
-    console.log(data);
     let section = document.querySelector(".section4");
+    console.log(data);
 
     section.innerHTML += `<article class="article4">
 <ul>
@@ -63,6 +63,8 @@ fetch(url)
     });
   })
 
-  .catch(function (error) {
+  .catch(function(error){
     console.log(error);
-  });
+})
+
+
