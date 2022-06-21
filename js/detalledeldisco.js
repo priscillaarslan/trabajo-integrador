@@ -26,7 +26,6 @@ fetch (`https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/${id}`)
 
     let section = document.querySelector(".section6");
     section.innerHTML = `<article class="section10">
-      
      
     <p class="ppp">
         Detalle de album <br />
@@ -56,4 +55,7 @@ fetch (`https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/${id}`)
  </article>
  `
 
+ .catch(function(error) {
+    console.log(error);
+})
 

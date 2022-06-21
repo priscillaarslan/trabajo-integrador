@@ -6,19 +6,21 @@ let id = queryStringObj.get("id");
 let url = `https://api.allorigins.win/raw?url=https://api.deezer.com/track/${id}/`; 
 fetch(url)
   .then(function (response) {
-    console.log(response);
     return response.json();
+    console.log(response);
+  
   })
-  .then(function (data) {
+  .then(function(data) {
     let section = document.querySelector(".section4");
     console.log(data);
+   
 
-    section.innerHTML += 
+  section.innerHTML += 
     `<article class="article4">
 <ul>
-<a href="./detalledecanciones.html?id=${data.id}"> <li class="listadetalle5">${data.title}</li> </a>
+<a href="./detalledecanciones.html?id=${data.data.id}"> <li class="listadetalle5">${data.title}</li> </a>
 </ul>
-<a href="./detalledeartista.html?id=${data.artist.id}">
+<a href="./detalledeartista.html?id=${data.data.id}">
   <p class="par"> - ${data.artist.name}</p>
 </a>
 <a href="./detalledeldisco.html?id=${data.album.id}">
@@ -35,7 +37,11 @@ fetch(url)
 <br>
 <br>
 <br>
-`;
+`
+
+.catch(function (error){
+  console.log(error);
+})
 
 
     let button = document.querySelector(".agregar");
@@ -65,8 +71,6 @@ fetch(url)
     });
   })
 
-  .catch(function(error){
-    console.log(error);
-})
+
 
 
