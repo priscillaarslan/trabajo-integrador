@@ -19,10 +19,10 @@ fetch(url)
 <article>
 
 <img class="img1" src=${artistas[i].album.cover} alt="" >
-<a href="./detalledeartista.html?idCantante=${artistas[i].id}">
+<a href="./detalledeartista.html?id=${artistas[i].id}">
 <p class= "artistas3" > ${artistas[i].artist.name}</p>
 </a>
-<a href="./detallecanciones.html?idcancion=${artistas[i].id}">
+<a href="./detallecanciones.html?id=${artistas[i].id}">
  <h3 class="artistas3"> ${artistas[i].title}</h3>
  </a>
 
@@ -56,12 +56,17 @@ fetch(url2)
       document.querySelector('.section2').innerHTML += `
             <article>
             <img class="img1" src=${almbums[i].cover}>
-            <a href="./detalledeldisco.html?Idalmbumes=${almbums[i].id}">
+            <a href="./detalledeldisco.html?id=${almbums[i].id}">
               <p class="artistas3"> ${almbums[i].title}</p>
+              
             </a>
+
+            
             
             
             `
+
+          
 
 
     }
@@ -90,7 +95,7 @@ fetch(url3)
       document.querySelector('.section14').innerHTML += `
       <article>
       <img class="img1" src=${artistas[i].picture}>
-      <a href="./detalledeartista.html?Idartistas=${artistas[i].id}">
+      <a href="./detalledeartista.html?id=${artistas[i].id}">
         <h3 class="artistas3"> ${artistas[i].name}</h3>
       </a>
      

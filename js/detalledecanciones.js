@@ -1,33 +1,31 @@
 let queryString = location.search;
 let queryStringObj = new URLSearchParams(queryString);
 let id = queryStringObj.get("id");
-
+console.log (id)
 
 let url = `https://api.allorigins.win/raw?url=https://api.deezer.com/track/${id}/`; 
 fetch(url)
   .then(function (response) {
-    return response.json();
     console.log(response);
-  
-  })
-  .then(function(data) {
+    return response.json();
+ })
+  .then(function (data) {
     let section = document.querySelector(".section4");
     console.log(data);
-   
 
-  section.innerHTML += 
+    section.innerHTML += 
     `<article class="article4">
 <ul>
-<a href="./detalledecanciones.html?id=${data.data.id}"> <li class="listadetalle5">${data.title}</li> </a>
+<a href="./detalledecanciones.html?id=${data.id}"> <li class="listadetalle5">${data.title}</li> </a>
 </ul>
-<a href="./detalledeartista.html?id=${data.data.id}">
+<a href="./detalledeartista.html?id=${data.artist.id}">
   <p class="par"> - ${data.artist.name}</p>
 </a>
 <a href="./detalledeldisco.html?id=${data.album.id}">
   <p class="par"> - ${data.album.title}</p>
   <img src="${data.album.cover_medium}" alt="">
 </a></a>
-<iframe title="deezer-widget" src="https://api.allorigins.win/raw?url=https://api.deezer.com/track/${id}" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
+<iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/track/${id}" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
 <br>
 <label class="agregar" for="terms">
 
@@ -37,11 +35,7 @@ fetch(url)
 <br>
 <br>
 <br>
-`
-
-.catch(function (error){
-  console.log(error);
-})
+`;
 
 
     let button = document.querySelector(".agregar");
@@ -71,6 +65,6 @@ fetch(url)
     });
   })
 
-
-
-
+  .catch(function(error){
+    console.log(error);
+});

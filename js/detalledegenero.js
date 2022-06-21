@@ -26,7 +26,7 @@ console.log("artistas",data.data)
 for (let i = 0; i < data.data.length; i++){
     document.querySelector('.artistas').innerHTML += ` 
     <div class="divartistas" ><img class="imagenesartistas" src="${data.data[i].picture}" alt=""></div>
-    <a class="divartistas" href="./detalledeartista.html?idGenero=${data.data[i].id}">${data.data[i].name}</a>`
+    <a class="divartistas" href="./detalledeartista.html?id=${data.data[i].id}">${data.data[i].name}</a>`
 }
 })
 })

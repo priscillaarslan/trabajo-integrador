@@ -1,10 +1,10 @@
 let results = document.querySelector('.section3');
 let queryString = location.search;
 let queryStringObj = new URLSearchParams(queryString);
-let busqueda = queryStringObj.get('q');
+let busqueda = queryStringObj.get('search');
 console.log(busqueda)
 
-let Artistas = `https://api.allorigins.win/raw?url=https://api.deezer.com/search/artist?q=${busqueda}`
+let Artistas = `https://api.allorigins.win/raw?url=https://api.deezer.com/search/track?q=${busqueda}`
 
 
 
@@ -18,10 +18,10 @@ fetch(Artistas)
 
       
 
-
+console.log (buscar.length)
 
         if (buscar.length > 0) {
-            for (let i = 0; i <= 2; i++) {
+            for (let i = 0; i < buscar.length; i++) {
 
                 results.innerHTML += `<article>
                 <img class="img1" src=${buscar[i].picture}>
@@ -87,6 +87,4 @@ fetch(Artistas)
     .catch(function (error) {
         console.log(error);
     })
-
-
   
