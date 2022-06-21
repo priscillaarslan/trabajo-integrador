@@ -1,9 +1,10 @@
 let queryString = location.search;
 let queryStringObj = new URLSearchParams(queryString);
-let id = queryStringObj.get("id");
+let id = queryStringObj.get('id');
 console.log(id);
 
-fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/${id}`)
+fetch(`https://api.deezer.com/track/3135556/https://developers.deezer.com/api/track${id}`)
+
   .then(function (response) {
     console.log(response);
     return response.json();
@@ -22,7 +23,7 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/${id}`)
   <p class="par"> - ${data.album.title}</p>
   <img src="${data.album.cover_medium}" alt="">
 </a></a>
-<iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/track/${id}" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
+<iframe title="deezer-widget" src="https://developers.deezer.com/api/explorer?url=track/3135556/${id}" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
 <br>
 <label class="agregar" for="terms">
   <button class="agregar" >
