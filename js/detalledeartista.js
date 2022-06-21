@@ -20,24 +20,10 @@ console.log(id);
         </a>
         <img class="img5" src="./img/badbunnyd.jpeg">
         <br>
-        <iframe class="iframe3" src="https://open.spotify.com/embed/track/4gzsuuZypVbxs0Af1LSZyB" width="100%"
-          height="80" frameBorder="0" allowfullscreen=""
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-        <iframe class="iframe3" src="https://open.spotify.com/embed/track/2JPLbjOn0wPCngEot2STUS" width="100%"
-          height="80" frameBorder="0" allowfullscreen=""
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-        <iframe class="iframe3" src="https://open.spotify.com/embed/track/2vmfvSoZBFAt9hhRoEByLi" width="100%"
-          height="80" frameBorder="0" allowfullscreen=""
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-        <iframe class="iframe3" src="https://open.spotify.com/embed/track/4r9jkMEnArtWGH2rL2FZl0" width="100%"
-          height="80" frameBorder="0" allowfullscreen=""
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-        <iframe class="iframe3" src="https://open.spotify.com/embed/track/48AJSd42lXpicsGqcgopof" width="100%"
-          height="80" frameBorder="0" allowfullscreen=""
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
       </article>`
 
 
 
 
+      
       
