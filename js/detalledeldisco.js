@@ -13,9 +13,9 @@ fetch (`https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/${id}`)
     let generos = `Este disco no tiene generos asignados`
     for (let i = 0; i < data.genres.data.length; i++) {
         if (i==0) {
-            generos = `<a href="./detalledeldisco.html?id=${data.genres.data[i].id}">${data.genres.data[i].name}</a>`;
+            generos = `<a class="dddisco" href="./detalledeldisco.html?id=${data.genres.data[i].id}">${data.genres.data[i].name}</a>`;
         } else{
-            generos += `, <a href="./detalledeldisco.html?id=${data.genres.data[i].id}">${data.genres.data[i].name}</a>`;
+            generos += `, <a class="dddisco" href="./detalledeldisco.html?id=${data.genres.data[i].id}">${data.genres.data[i].name}</a>`;
         }   
     } 
     console.log(generos);

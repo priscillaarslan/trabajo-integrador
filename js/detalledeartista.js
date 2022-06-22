@@ -53,7 +53,7 @@ console.log(id);
 for (let i = 0; i < 5; i++) {
   section.innerHTML += 
         `
-        <a href="./detalledeldisco.html?id=${data.data[i].id}">
+        <a class="listacanciones1" href="./detalledeldisco.html?id=${data.data[i].id}">
           <h3 class="artistas">${data.data[i].title} </h3>
         </a>
         
